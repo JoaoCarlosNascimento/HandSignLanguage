@@ -1,4 +1,4 @@
-Oi! Aqui tem uns links/informação que podem ser úteis para o desenvolvimento desse projeto.
+Oi! Aqui tem uns links/informações que podem ser úteis para o desenvolvimento desse projeto.
 
 # Instalação
 Para instalar o PyQt5, é só correr o comando no terminal (lembrem de colocar no environment certo):
