@@ -6,7 +6,7 @@ class word:
         pass
 
 class phrase:
-    def __init__(self):
-        self.words = []
+    def __init__(self, words):
+        self.phrase = words
     def display(self):
         pass
