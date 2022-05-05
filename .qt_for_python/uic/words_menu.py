@@ -27,7 +27,9 @@ class Ui_Form(object):
         self.listWidget.setSizePolicy(sizePolicy)
         self.listWidget.setMinimumSize(QtCore.QSize(650, 0))
         self.listWidget.setMaximumSize(QtCore.QSize(650, 16777215))
+        self.listWidget.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
         self.listWidget.setResizeMode(QtWidgets.QListView.Fixed)
+        self.listWidget.setSelectionRectVisible(False)
         self.listWidget.setObjectName("listWidget")
 
         self.retranslateUi(Form)

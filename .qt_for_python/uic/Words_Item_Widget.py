@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'd:\SRI\HandSignLanguage\menus\words_menu\custom_widget.ui'
+# Form implementation generated from reading ui file 'd:\SRI\HandSignLanguage\menus\words_menu\Words_Item_Widget.ui'
 #
 # Created by: PyQt5 UI code generator 5.9.2
 #
