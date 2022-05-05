@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QWidget, QListWidgetItem
 from PyQt5 import uic
 
 class my_menus(QWidget):
-    def __init__(self, menus_list, parent=None):
+    def __init__(self, parent=None):
         super(my_menus, self).__init__(parent)
 
         # menus_list

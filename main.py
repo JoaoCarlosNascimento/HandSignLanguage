@@ -5,7 +5,6 @@ from PyQt5 import QtWidgets, uic, QtGui, QtCore
 import sys
 from PyQt5.QtWidgets import QWidget, QToolTip, QPushButton, QApplication
 
-# from menus.words_menu import Words_Item_Widget
 from menus.words_menu.words_menu import words_menu
 from menus.text_menu.text_menu import text_menu
 
@@ -22,9 +21,8 @@ def find_menu(name):
 
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):
-        # Call the inherited classes __init__ method
         super(Ui, self).__init__()
-        uic.loadUi('menus/main.ui', self)  # Load the .ui file
+        uic.loadUi('menus/main.ui', self)
 
         self.text_page_config()
         self.words_page_config()

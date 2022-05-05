@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'd:\SRI\HandSignLanguage\menus\words_menu\Words_Item_Widget.ui'
+# Form implementation generated from reading ui file 'd:\SRI\HandSignLanguage\menus\words_menu\words_item_widget.ui'
 #
 # Created by: PyQt5 UI code generator 5.9.2
 #
@@ -16,7 +16,7 @@ class Ui_Form(object):
         Form.setMinimumSize(QtCore.QSize(650, 0))
         Form.setMaximumSize(QtCore.QSize(650, 16777215))
         self.frame_2 = QtWidgets.QFrame(Form)
-        self.frame_2.setGeometry(QtCore.QRect(0, 0, 530, 90))
+        self.frame_2.setGeometry(QtCore.QRect(0, 0, 555, 90))
         self.frame_2.setFrameShape(QtWidgets.QFrame.Box)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Plain)
         self.frame_2.setObjectName("frame_2")
@@ -47,7 +47,7 @@ class Ui_Form(object):
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
-        self.pb_config = QtWidgets.QPushButton(self.frame_2)
+        self.pb_config = QtWidgets.QToolButton(self.frame_2)
         self.pb_config.setGeometry(QtCore.QRect(350, 30, 75, 30))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -63,6 +63,9 @@ class Ui_Form(object):
         sizePolicy.setHeightForWidth(self.pb_connect.sizePolicy().hasHeightForWidth())
         self.pb_connect.setSizePolicy(sizePolicy)
         self.pb_connect.setObjectName("pb_connect")
+        self.bt_delete = QtWidgets.QToolButton(self.frame_2)
+        self.bt_delete.setGeometry(QtCore.QRect(500, 40, 25, 19))
+        self.bt_delete.setObjectName("bt_delete")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -72,4 +75,5 @@ class Ui_Form(object):
         Form.setWindowTitle(_translate("Form", "Form"))
         self.pb_config.setText(_translate("Form", "..."))
         self.pb_connect.setText(_translate("Form", "Connect"))
+        self.bt_delete.setText(_translate("Form", "X"))
 

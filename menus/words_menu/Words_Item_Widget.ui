@@ -33,7 +33,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>530</width>
+     <width>555</width>
      <height>90</height>
     </rect>
    </property>
@@ -109,7 +109,7 @@
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="pb_config">
+   <widget class="QToolButton" name="pb_config">
     <property name="geometry">
      <rect>
       <x>350</x>
@@ -145,6 +145,19 @@
     </property>
     <property name="text">
      <string>Connect</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="bt_delete">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>40</y>
+      <width>25</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
     </property>
    </widget>
   </widget>
