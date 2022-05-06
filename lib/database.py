@@ -1,0 +1,92 @@
+import sqlite3
+
+class database:
+    def __init__(self):
+        try:
+            self.connection = sqlite3.connect("../db/books.db")
+        except:
+            print("")
+        self.cursor = self.connection.cursor()
+        sql = "PRAGMA foreign_keys = ON;"
+        self.cursor.execute(sql)
+
+    def new_book(self, name, author):
+        sql = 'INSERT INTO BOOK (TITLE, AUTHOR) VALUES(?,?);'
+        self.execute(sql, (name, author))
+        return self.get_id('BOOK')
+
+    def new_page(self, book_id, img_path = None):
+        if img_path is not None: img = read_img(img_path)
+        sql = 'SELECT COUNT(ID) FROM PAGES WHERE BOOK = ' + str(book_id) + ';'
+        try:
+            num = self.cursor.execute(sql).fetchall()[0][0] + 1
+        except:
+            print("Something went wrong!")
+            return
+        if img_path is not None:
+            sql = 'INSERT INTO PAGES (IMG, BOOK, NUM) \
+                        VALUES(?, ?, ?);'
+            self.execute(sql,(img, book_id, num))
+        else:
+            sql = 'INSERT INTO PAGES (BOOK, NUM) \
+                        VALUES(?, ?);'
+            self.execute(sql, (book_id, num))
+        return self.get_id('PAGES')
+
+    def get_id(self, table_name):
+        sql = 'SELECT MAX(ID) FROM '+ table_name +';'
+        id = self.cursor.execute(sql).fetchall()
+        return id[0][0]
+
+    def commit(self):
+        self.connection.commit()
+
+    def new_page_text(self, txt_pt, txt_en, page_id):
+        sql = 'INSERT INTO PAGE_CONTENTS (PT, EN, PAGEID) VALUES (?, ?, ?);'
+        self.execute(sql, (txt_pt, txt_en, page_id))
+    
+    def new_word(self, word, vid_path, lang='pt'):
+        if lang == 'pt':
+            sql = 'INSERT INTO WORDS_PT(WORD, FIGURE) VALUES (?, ?);'
+        elif lang == 'en':
+            sql = 'INSERT INTO WORDS_EN(WORD, FIGURE) VALUES (?, ?);'
+        self.execute(sql, (word, vid_path))
+
+    def execute(self, sql, opt):
+        try:
+            if opt == None:
+                self.cursor.execute(sql)
+            else:
+                self.cursor.execute(sql, opt)
+        except:
+            print("Something went wrong!")
+    def get_pages(self, book_id):
+        sql = 'SELECT * FROM PAGES WHERE BOOK =' + str(book_id)+ ';'
+        pages = self.cursor.execute(sql).fetchall()
+        return pages
+    def get_page_text(self, page_id):
+        sql = 'SELECT * FROM PAGE_CONTENTS WHERE PAGEID =' + str(page_id)+ ';'
+        content = self.cursor.execute(sql).fetchall()
+        if len(content) > 0:
+            return content[0]
+        else:
+            return content
+    # def test(self):
+    #     sql = 'SELECT IMG FROM PAGES WHERE BOOK = 1 AND NUM = 5;'
+    #     img = self.cursor.execute(sql).fetchall()
+    #     with open("img.png", 'wb') as file:
+    #         file.write(img[0][0])
+    
+def read_img(img_path):
+    with open(img_path, 'rb') as file:
+        blob = file.read()
+    return blob
+
+db = database()
+# b = db.new_book("my book", "rando")
+# db.get_id("book")
+# print(db.get_page_text(1))
+# db.new_page_text("meu cachorro é azul", "my dog is blue", 1)
+
+print(db.get_page_text(2))
+db.commit()
