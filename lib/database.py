@@ -3,16 +3,17 @@ import sqlite3
 class database:
     def __init__(self):
         try:
-            self.connection = sqlite3.connect("../db/books.db")
+            self.connection = sqlite3.connect("../db/books2.db")
         except:
             print("")
         self.cursor = self.connection.cursor()
         sql = "PRAGMA foreign_keys = ON;"
         self.cursor.execute(sql)
 
-    def new_book(self, name, author):
-        sql = 'INSERT INTO BOOK (TITLE, AUTHOR) VALUES(?,?);'
-        self.execute(sql, (name, author))
+    def new_book(self, name, img_path = None):
+        if img_path is not None: img = read_img(img_path)
+        sql = 'INSERT INTO BOOK (TITLE, IMG) VALUES(?,?);'
+        self.execute(sql, (name, img))
         return self.get_id('BOOK')
 
     def new_page(self, book_id, img_path = None):
@@ -83,10 +84,11 @@ def read_img(img_path):
     return blob
 
 db = database()
-# b = db.new_book("my book", "rando")
+db.new_book("A Dog on a Log", "..\Books\English\Split_BooksImage\A Dog on a Log\A Dog on a Log_1.jpg")
+db.new_book("Abe The Service Dog", "..\Books\English\Split_BooksImage\Abe The Service Dog\Abe The Service Dog_1.jpg")
+db.new_book("Doing my Chores", "..\Books\English\Split_BooksImage\Doing my Chores\Doing my Chores_1.jpg")
 # db.get_id("book")
 # print(db.get_page_text(1))
 # db.new_page_text("meu cachorro é azul", "my dog is blue", 1)
 
-print(db.get_page_text(2))
 db.commit()
