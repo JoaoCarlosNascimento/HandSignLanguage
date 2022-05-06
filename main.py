@@ -70,12 +70,13 @@ class Ui(QtWidgets.QMainWindow):
 
         widget.bt_next.clicked.connect(lambda:
             widget.new_page_popup(
-                self.change_page
+                self.change_page, find_menu("menu_text")['ptr'].clear_text
             )
         )
 
     def books_page_config(self):
-        widget = books_menu(self.stackedWidget, lambda: self.change_page("menu_create"))
+        widget = books_menu(self.stackedWidget, lambda: self.change_page(
+            "menu_create", find_menu("menu_text")['ptr'].clear_text))
         self.stackedWidget.addWidget(widget)
         add_menu(self.stackedWidget, "menu_books", widget)
 

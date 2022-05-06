@@ -46,10 +46,11 @@ class words_menu(my_menus):
     def remove_duplicates(text):
         return list(dict.fromkeys(text))
 
-    def new_page_popup(self, func=None):
+    def new_page_popup(self, func=None,init_text = None):
         self.popup = create_popup()
 
-        self.popup.bt_np.clicked.connect(lambda: self.submit_page(func))
+        self.popup.bt_np.clicked.connect(
+            lambda: self.submit_page(func, init_text))
 
         self.popup.bt_sc.clicked.connect(lambda: self.save_close(func))
 
@@ -64,9 +65,11 @@ class words_menu(my_menus):
 
         self.popup.show()
 
-    def submit_page(self,func):
+    def submit_page(self, func, init_text):
         print("Submit page")
 
+
+        init_text()
         self.popup.close()
         func("menu_text")
 

@@ -7,3 +7,6 @@ class text_menu(my_menus):
         super(text_menu, self).__init__(parent)
         uic.loadUi('menus/text_menu/text_menu.ui', self)
         self.objectName = "menu_text"
+
+    def clear_text(self):
+        self.plainTextEdit.clear()
