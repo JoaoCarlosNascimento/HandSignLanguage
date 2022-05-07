@@ -3,14 +3,18 @@ from PyQt5 import uic
 from PyQt5.QtGui import QPixmap
 
 from menus.my_menus import my_menus
-from menus.words_menu.word_popup import word_popup
 from menus.read_menu.text_widget import text_widget
+from menus.read_menu.info_popup import info_popup
 class read_menu_contents(my_menus):
     def __init__(self, parent=None, page_id = 1):
         super(read_menu_contents, self).__init__(parent)
         uic.loadUi('menus/read_menu/read_menu_contents.ui', self)
         self.page_id = page_id
         self.load()
+
+        self.text.itemClicked.connect(
+            self.item_clicked
+        )
     def load(self):
         self.clear()
         db = self.parent().parent().parent().db
@@ -34,4 +38,8 @@ class read_menu_contents(my_menus):
     def clear(self):
         self.text.clear()
         
+    def item_clicked(self):
+        sel = self.text.itemWidget(self.text.currentItem()).text()
 
+        self.pp = info_popup(sel)
+        self.pp.show()
