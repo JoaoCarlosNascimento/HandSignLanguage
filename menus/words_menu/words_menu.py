@@ -14,6 +14,10 @@ class words_menu(my_menus):
 
         self.words_list = []
         self.full_text = ""
+        self.bt_next.clicked.connect(
+            lambda: self.submit_page())
+        self.popup = None
+
     def init_page(self):
         self.listWidget.clear()
     
@@ -59,19 +63,23 @@ class words_menu(my_menus):
         self.popup = create_popup()
 
         self.popup.bt_np.clicked.connect(
-            lambda: self.submit_page(func, init_text))
+            lambda: self.new_page(func, init_text))
 
         self.popup.bt_sc.clicked.connect(lambda: self.save_close(func))
 
         self.popup.show()
-
-    def submit_page(self, func, init_text):
-        print("Submit page")
-
-
+    def new_page(self, func, init_text):
         init_text()
-        self.popup.close()
         func("menu_text")
+        self.popup.close()
+
+    def submit_page(self):
+        print("Submit page")
+        # db = self.parent().parent().parent().db
+        # if self.popup is not None:
+        #     for word in self.words_list:
+        #         db.new_word(word, self.popup.contents)
+        # self.words_list
 
     def save_close(self, func):
         print("Finish transaction")

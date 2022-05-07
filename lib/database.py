@@ -11,7 +11,7 @@ class database:
         self.cursor.execute(sql)
 
     def new_book(self, name, img_path = None):
-        if img_path is not None: 
+        if img_path is not None and img_path != '': 
             img = read_img(img_path)
             sql = 'INSERT INTO BOOK (TITLE, IMG) VALUES(?,?);'
             self.cursor.execute(sql, (str(name), img))
@@ -89,6 +89,9 @@ class database:
             sql = 'SELECT * FROM BOOK;'
         books = self.cursor.execute(sql).fetchall()
         return books
+    def get_word(self, word):
+        sql = 'SELECT * FROM WORDS_EN WHERE WORD = ' + word +';'
+        return self.cursor.execute(sql).fetchall()
     def disconnect(self):
         self.connection.close()
     # def test(self):
