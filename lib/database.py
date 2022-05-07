@@ -3,7 +3,7 @@ import sqlite3
 class database:
     def __init__(self):
         try:
-            self.connection = sqlite3.connect("../db/books2.db")
+            self.connection = sqlite3.connect("./db/books.db")
         except:
             print("")
         self.cursor = self.connection.cursor()
@@ -11,9 +11,14 @@ class database:
         self.cursor.execute(sql)
 
     def new_book(self, name, img_path = None):
-        if img_path is not None: img = read_img(img_path)
-        sql = 'INSERT INTO BOOK (TITLE, IMG) VALUES(?,?);'
-        self.execute(sql, (name, img))
+        if img_path is not None: 
+            img = read_img(img_path)
+            sql = 'INSERT INTO BOOK (TITLE, IMG) VALUES(?,?);'
+            self.cursor.execute(sql, (str(name), img))
+        else:
+            self.cursor.execute("INSERT INTO BOOK (TITLE)  VALUES ('" +name+ "');")
+
+            # self.cursor.execute(sql)
         return self.get_id('BOOK')
 
     def new_page(self, book_id, img_path = None):
@@ -72,6 +77,13 @@ class database:
             return content[0]
         else:
             return content
+    def get_books(self, book_id = None):
+        if book_id is not None:
+            sql = 'SELECT * FROM BOOK WHERE ID = '+ str(book_id)+';'
+        else:
+            sql = 'SELECT * FROM BOOK;'
+        books = self.cursor.execute(sql).fetchall()
+        return books
     # def test(self):
     #     sql = 'SELECT IMG FROM PAGES WHERE BOOK = 1 AND NUM = 5;'
     #     img = self.cursor.execute(sql).fetchall()
@@ -83,12 +95,12 @@ def read_img(img_path):
         blob = file.read()
     return blob
 
-db = database()
-db.new_book("A Dog on a Log", "..\Books\English\Split_BooksImage\A Dog on a Log\A Dog on a Log_1.jpg")
-db.new_book("Abe The Service Dog", "..\Books\English\Split_BooksImage\Abe The Service Dog\Abe The Service Dog_1.jpg")
-db.new_book("Doing my Chores", "..\Books\English\Split_BooksImage\Doing my Chores\Doing my Chores_1.jpg")
-# db.get_id("book")
-# print(db.get_page_text(1))
-# db.new_page_text("meu cachorro é azul", "my dog is blue", 1)
+# db = database()
+# db.new_book("A Dog on a Log", ".\Books\English\Split_BooksImage\A Dog on a Log\A Dog on a Log_1.jpg")
+# db.new_book("Abe The Service Dog", ".\Books\English\Split_BooksImage\Abe The Service Dog\Abe The Service Dog_1.jpg")
+# db.new_book("Doing my Chores", ".\Books\English\Split_BooksImage\Doing my Chores\Doing my Chores_1.jpg")
+# # db.get_id("book")
+# # print(db.get_page_text(1))
+# # db.new_page_text("meu cachorro é azul", "my dog is blue", 1)
 
-db.commit()
+# db.commit()

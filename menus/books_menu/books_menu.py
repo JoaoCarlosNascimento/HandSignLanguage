@@ -1,6 +1,8 @@
 from PyQt5.QtWidgets import QWidget, QListWidgetItem
 from PyQt5 import uic
 
+from PyQt5.QtGui import QPixmap
+
 from menus.my_menus import my_menus
 from menus.books_menu.books_item_widget import books_item_widget
 
@@ -16,9 +18,6 @@ class books_menu(my_menus):
         self.listWidget.setSpacing(15)
 
         self.listWidget.itemClicked.connect(self.item_clicked)
-
-        # self.init_page()
-
 
     def item_clicked(self,obj):
         if self.listWidget.itemWidget(self.listWidget.item(
@@ -37,13 +36,18 @@ class books_menu(my_menus):
     def init_page(self):
         # Load da base de dados
         self.listWidget.clear()
-
+        db = self.parent().parent().parent().db
         # Inicializar os livros
-        for i in range(1):
+        books = db.get_books()
+        # print(books)
+        for b in books:
             item = QListWidgetItem(self.listWidget)
             item_widget = books_item_widget()
             item.setSizeHint(item_widget.size())
-
+            img = QPixmap()
+            img.loadFromData(b[2])
+            item_widget.book_cover.setPixmap(img)
+            item_widget.book_name.setText(b[1])
             self.listWidget.addItem(item)
             self.listWidget.setItemWidget(item, item_widget)
 

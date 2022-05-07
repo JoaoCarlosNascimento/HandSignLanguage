@@ -40,6 +40,9 @@
    <property name="text">
     <string>Name</string>
    </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLabel" name="book_name">
    <property name="geometry">
@@ -59,7 +62,6 @@
    <property name="font">
     <font>
      <pointsize>12</pointsize>
-     <weight>75</weight>
      <bold>true</bold>
      <underline>false</underline>
      <strikeout>false</strikeout>

@@ -15,6 +15,7 @@ from menus.create_menu.create_menu import create_menu
 
 menus = []
 
+from lib.database import database
 def add_menu(stck,name,ptr):
     menus.append({"name": name, "idx": stck.indexOf(ptr), "ptr": ptr})
     # print(name+" idx "+str(stck.indexOf(ptr)))
@@ -36,9 +37,11 @@ class Ui(QtWidgets.QMainWindow):
         self.text_page_config()
         self.words_page_config()
 
-        self.change_page("menu_main")
+        self.change_page("menu_create")
 
         self.show()  # Show the GUI
+
+        self.db = database()
 
     def change_page(self, name, func = None):
         find_menu(name)['ptr'].init_page()
@@ -110,3 +113,4 @@ class Ui(QtWidgets.QMainWindow):
 app = QtWidgets.QApplication(sys.argv)
 window = Ui()
 app.exec_()
+window.db.connection.close()

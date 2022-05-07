@@ -75,6 +75,7 @@ class words_menu(my_menus):
 
     def save_close(self, func):
         print("Finish transaction")
-
+        db = self.parent().parent().parent().db
+        db.commit()
         self.popup.close()
         func("menu_books")
