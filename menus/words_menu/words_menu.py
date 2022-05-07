@@ -13,11 +13,14 @@ class words_menu(my_menus):
         self.objectName = "menu_words"
 
         self.words_list = []
-
+        self.full_text = ""
     def init_page(self):
         self.listWidget.clear()
     
-    def initialize_list(self,text):
+    def initialize_list(self,text, img_path):
+        self.image_path = img_path
+        self.full_text = text
+
         clean_text = text.replace('\n', ' ')
         words_list = clean_text.split(' ')
         self.words_list = words_menu.remove_duplicates(words_list)
@@ -47,21 +50,18 @@ class words_menu(my_menus):
         return list(dict.fromkeys(text))
 
     def new_page_popup(self, func=None,init_text = None):
+        db = self.parent().parent().parent().db
+
+        book_id = db.get_id("BOOK")
+        page = db.new_page(book_id, self.image_path)
+        db.new_page_text(self.full_text, self.full_text, page)
+        
         self.popup = create_popup()
 
         self.popup.bt_np.clicked.connect(
             lambda: self.submit_page(func, init_text))
 
         self.popup.bt_sc.clicked.connect(lambda: self.save_close(func))
-
-
-        # self.bt_np.clicked.connect(
-        #     # self.select_file_diag
-        # )
-
-        # self.bt_sc.clicked.connect(
-        #     # self.select_file_diag
-        # )
 
         self.popup.show()
 

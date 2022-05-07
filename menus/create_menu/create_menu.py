@@ -19,13 +19,14 @@ class create_menu(my_menus):
         )
     def init_page(self):
         self.book_title.clear()
-
+        self.preview.clear()
 
     def submit(self,func = None):
         print("Submit Title")
         db = self.parent().parent().parent().db
         # if self.image_path 
         db.new_book(name = self.book_title.text(), img_path= self.image_path)
+        
         if func != None:
             func()
         
@@ -33,10 +34,7 @@ class create_menu(my_menus):
         self.block_close = True
         fname = QFileDialog.getOpenFileName(
             self, 'Open file', 'c:\\', "Image files (*.jpg *.gif)")
-        # self.label.setPixmap(QPixmap(fname[0]))
-        # with open(fname[0], 'rb') as file:
-        #     blob = file.read()
-        
+
         self.image_path = fname[0]
         img = QPixmap(self.image_path)
         self.preview.setPixmap(img)

@@ -7,13 +7,19 @@ from menus.my_menus import my_menus
 from menus.books_menu.books_item_widget import books_item_widget
 
 class books_menu(my_menus):
-    def __init__(self, parent=None, func=None):
+    def __init__(self, parent=None, func=None, func2 = None, func3 = None):
         super(books_menu, self).__init__(parent)
         uic.loadUi('menus/books_menu/books_menu.ui', self)
         self.objectName = "menu_books"
 
         if func != None:
-            self.changePage = func
+            self.changePage_newbook = func
+
+        if func2 != None:
+            self.selectBook = func2
+
+        if func3 != None:
+            self.changePage_read = func3
 
         self.listWidget.setSpacing(15)
 
@@ -23,15 +29,20 @@ class books_menu(my_menus):
         if self.listWidget.itemWidget(self.listWidget.item(
                 self.listWidget.indexFromItem(obj).row())).objectName == "CreateBook":
 
-            self.changePage()
+            self.changePage_newbook()
 
             print("New Book")
         else:
             print("Open Book")
-            book_name = self.listWidget.itemWidget(self.listWidget.item(
-                self.listWidget.indexFromItem(obj).row())).book_name.text()
+            # book_name = self.listWidget.itemWidget(self.listWidget.item(
+            #     self.listWidget.indexFromItem(obj).row())).book_name.text()
+            
+            book_id = self.listWidget.itemWidget(self.listWidget.item(
+                self.listWidget.indexFromItem(obj).row())).book_id
+            self.selectBook(book_id)
+            self.changePage_read()
 
-            print(book_name)
+            # print()
 
     def init_page(self):
         # Load da base de dados
@@ -48,6 +59,7 @@ class books_menu(my_menus):
             img.loadFromData(b[2])
             item_widget.book_cover.setPixmap(img)
             item_widget.book_name.setText(b[1])
+            item_widget.book_id = b[0]
             self.listWidget.addItem(item)
             self.listWidget.setItemWidget(item, item_widget)
 

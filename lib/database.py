@@ -17,15 +17,16 @@ class database:
             self.cursor.execute(sql, (str(name), img))
         else:
             self.cursor.execute("INSERT INTO BOOK (TITLE)  VALUES ('" +name+ "');")
-
-            # self.cursor.execute(sql)
         return self.get_id('BOOK')
 
     def new_page(self, book_id, img_path = None):
         if img_path is not None: img = read_img(img_path)
         sql = 'SELECT COUNT(ID) FROM PAGES WHERE BOOK = ' + str(book_id) + ';'
         try:
-            num = self.cursor.execute(sql).fetchall()[0][0] + 1
+            num = self.cursor.execute(sql).fetchall()
+            if len(num) > 0:
+                num = num[0][0] + 1
+            else: num = 1
         except:
             print("Something went wrong!")
             return
@@ -70,6 +71,10 @@ class database:
         sql = 'SELECT * FROM PAGES WHERE BOOK =' + str(book_id)+ ';'
         pages = self.cursor.execute(sql).fetchall()
         return pages
+    def get_page(self, page_id):
+        sql = 'SELECT * FROM PAGES WHERE ID =' + str(page_id)+ ';'
+        page = self.cursor.execute(sql).fetchall()
+        return page
     def get_page_text(self, page_id):
         sql = 'SELECT * FROM PAGE_CONTENTS WHERE PAGEID =' + str(page_id)+ ';'
         content = self.cursor.execute(sql).fetchall()
@@ -84,6 +89,8 @@ class database:
             sql = 'SELECT * FROM BOOK;'
         books = self.cursor.execute(sql).fetchall()
         return books
+    def disconnect(self):
+        self.connection.close()
     # def test(self):
     #     sql = 'SELECT IMG FROM PAGES WHERE BOOK = 1 AND NUM = 5;'
     #     img = self.cursor.execute(sql).fetchall()
