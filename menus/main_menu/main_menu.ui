@@ -16,7 +16,7 @@
   <widget class="QPushButton" name="pb_read">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>310</x>
      <y>340</y>
      <width>161</width>
      <height>81</height>
@@ -37,19 +37,6 @@
    </property>
    <property name="text">
     <string>Exit</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>340</y>
-     <width>161</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Check Books</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">

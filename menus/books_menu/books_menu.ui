@@ -39,6 +39,13 @@
      </property>
     </widget>
    </item>
+   <item row="0" column="1">
+    <widget class="QScrollBar" name="verticalScrollBar">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
    <item row="0" column="0">
     <widget class="QListWidget" name="listWidget">
      <property name="editTriggers">
@@ -67,14 +74,10 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="1">
-    <widget class="QScrollBar" name="verticalScrollBar">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-   </item>
   </layout>
+  <zorder>listWidget</zorder>
+  <zorder>pb_back</zorder>
+  <zorder>verticalScrollBar</zorder>
  </widget>
  <resources/>
  <connections/>
