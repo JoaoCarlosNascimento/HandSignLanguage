@@ -3,6 +3,8 @@ from PyQt5 import uic
 
 from menus.words_menu.word_popup import word_popup
 
+#tmp
+
 class words_item_widget(QWidget):
     def __init__(self, text, parent=None, func=None):
         super(words_item_widget, self).__init__(parent)

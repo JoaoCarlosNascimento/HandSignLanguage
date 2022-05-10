@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>650</width>
-    <height>158</height>
+    <height>113</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -150,7 +150,7 @@
    <widget class="QToolButton" name="bt_delete">
     <property name="geometry">
      <rect>
-      <x>500</x>
+      <x>510</x>
       <y>40</y>
       <width>25</width>
       <height>19</height>
