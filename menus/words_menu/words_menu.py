@@ -76,10 +76,8 @@ class words_menu(my_menus):
     def submit_page(self):
         print("Submit page")
         # db = self.parent().parent().parent().db
-        # if self.popup is not None:
-        #     for word in self.words_list:
-        #         db.new_word(word, self.popup.contents)
-        # self.words_list
+        # for item in self.listWidget:
+            
 
     def save_close(self, func):
         print("Finish transaction")
