@@ -13,6 +13,7 @@ class text_menu(my_menus):
         )
     def clear_text(self):
         self.plainTextEdit.clear()
+        self.preview.clear()
 
     def select_file_diag(self):
         self.block_close = True
