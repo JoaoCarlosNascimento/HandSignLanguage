@@ -38,7 +38,10 @@
     <string notr="true">background-color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
-    <string>Name</string>
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>C:/Users/Beatriz Lagos/Desktop/plus_sign.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -62,6 +65,7 @@
    <property name="font">
     <font>
      <pointsize>12</pointsize>
+     <weight>75</weight>
      <bold>true</bold>
      <underline>false</underline>
      <strikeout>false</strikeout>
@@ -74,7 +78,7 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string>Criar Novo Livro</string>
+    <string>Add New Book</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
