@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>next</string>
+    <string>Next</string>
    </property>
   </widget>
   <widget class="QPlainTextEdit" name="plainTextEdit">
@@ -39,7 +39,7 @@
   <widget class="QPushButton" name="upload">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>250</x>
      <y>360</y>
      <width>131</width>
      <height>24</height>
@@ -60,6 +60,9 @@
    </property>
    <property name="text">
     <string>TextLabel</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
