@@ -90,7 +90,9 @@ class database:
         return books
     def get_word(self, word):
         sql = 'SELECT * FROM WORDS WHERE WORD_EN = "' + word +'";'
-        return self.cursor.execute(sql).fetchall()[0]
+        ans = self.cursor.execute(sql).fetchall()
+        if len(ans) > 0: return ans[0]
+        else: return ans
     def disconnect(self):
         self.connection.close()
     # def test(self):
