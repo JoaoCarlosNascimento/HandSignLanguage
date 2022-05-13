@@ -14,8 +14,8 @@ class info_popup(my_popup):
     def set(self):
         db = self.parent.parent().parent().parent().parent().parent().parent().db
         info = db.get_word(self.word.text())
-        fig = info[2]
-        img = QPixmap()
-        img.loadFromData(fig)
-        self.img.setPixmap (img)
-        pass
+        if len(info)>0:
+            fig = info[2]
+            img = QPixmap()
+            img.loadFromData(fig)
+            self.img.setPixmap (img)
