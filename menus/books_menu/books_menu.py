@@ -34,8 +34,6 @@ class books_menu(my_menus):
             print("New Book")
         else:
             print("Open Book")
-            # book_name = self.listWidget.itemWidget(self.listWidget.item(
-            #     self.listWidget.indexFromItem(obj).row())).book_name.text()
             
             book_id = self.listWidget.itemWidget(self.listWidget.item(
                 self.listWidget.indexFromItem(obj).row())).book_id
