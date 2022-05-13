@@ -52,12 +52,11 @@ class database:
         sql = 'INSERT INTO PAGE_CONTENTS (PT, EN, PAGEID) VALUES (?, ?, ?);'
         self.execute(sql, (txt_pt, txt_en, page_id))
     
-    def new_word(self, word, vid_path, lang='pt'):
-        if lang == 'pt':
-            sql = 'INSERT INTO WORDS_PT(WORD, FIGURE) VALUES (?, ?);'
-        elif lang == 'en':
-            sql = 'INSERT INTO WORDS_EN(WORD, FIGURE) VALUES (?, ?);'
-        self.execute(sql, (word, vid_path))
+    def new_word(self, pt, en, vid_path):
+        vid = read_img(vid_path)
+        sql = 'INSERT INTO WORDS(WORD_EN, WORD_PT, FIGURE) VALUES (?, ?, ?);'
+        
+        self.cursor.execute(sql, (pt, en, vid))
 
     def execute(self, sql, opt):
         try:
@@ -90,8 +89,8 @@ class database:
         books = self.cursor.execute(sql).fetchall()
         return books
     def get_word(self, word):
-        sql = 'SELECT * FROM WORDS_EN WHERE WORD = ' + word +';'
-        return self.cursor.execute(sql).fetchall()
+        sql = 'SELECT * FROM WORDS WHERE WORD_EN = "' + word +'";'
+        return self.cursor.execute(sql).fetchall()[0]
     def disconnect(self):
         self.connection.close()
     # def test(self):

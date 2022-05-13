@@ -3,7 +3,7 @@ from PyQt5 import uic
 
 from menus.words_menu.word_popup import word_popup
 
-#tmp
+#tmp6
 
 class words_item_widget(QWidget):
     def __init__(self, text, parent=None, func=None):
@@ -13,10 +13,12 @@ class words_item_widget(QWidget):
         self.le_word.setText(text)
         self.pb_config.clicked.connect(self.press_word_popup)
         self.bt_delete.clicked.connect(self.auto_delete)
+        self.word_file_name = None
 
     def press_word_popup(self, e):
-        self.popup = word_popup()
+        self.popup = word_popup(self)
         self.popup.show()
+
 
     def auto_delete(self):
         if self.func != None:

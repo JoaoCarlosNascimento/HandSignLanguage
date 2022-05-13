@@ -75,9 +75,16 @@ class words_menu(my_menus):
 
     def submit_page(self):
         print("Submit page")
-        # db = self.parent().parent().parent().db
-        # for item in self.listWidget:
-            
+
+        
+        db = self.parent().parent().parent().db
+        for i in range(self.listWidget.count()):
+            aux = self.listWidget.itemWidget(self.listWidget.item(i))
+            txt = aux.le_word.text()
+            img_path = aux.word_file_name
+            if img_path is not None:
+                db.new_word(txt, txt, img_path)
+
 
     def save_close(self, func):
         print("Finish transaction")
