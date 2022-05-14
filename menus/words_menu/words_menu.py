@@ -4,7 +4,8 @@ from PyQt5 import uic
 from menus.my_menus import my_menus
 from menus.words_menu.words_item_widget import words_item_widget
 from menus.create_menu.create_popup import create_popup
-
+import os
+from shutil import copyfile
 
 class words_menu(my_menus):
     def __init__(self, parent=None):
@@ -82,8 +83,13 @@ class words_menu(my_menus):
             aux = self.listWidget.itemWidget(self.listWidget.item(i))
             txt = aux.le_word.text()
             img_path = aux.word_file_name
+            
             if img_path is not None:
-                db.new_word(txt, txt, img_path)
+                fname = img_path.split('/')
+                fname = fname[-1]
+                fname = os.path.join('resources', fname)
+                copyfile(img_path, fname)
+                db.new_word(txt, txt, fname)
 
 
     def save_close(self, func):

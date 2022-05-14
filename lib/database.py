@@ -53,10 +53,9 @@ class database:
         self.execute(sql, (txt_pt, txt_en, page_id))
     
     def new_word(self, pt, en, vid_path):
-        vid = read_img(vid_path)
-        sql = 'INSERT INTO WORDS(WORD_EN, WORD_PT, FIGURE) VALUES (?, ?, ?);'
+        sql = 'INSERT INTO WORDS(WORD_EN, WORD_PT, FIG_PATH) VALUES (?, ?, ?);'
         
-        self.cursor.execute(sql, (pt, en, vid))
+        self.cursor.execute(sql, (upper(pt), upper(en), vid_path))
 
     def execute(self, sql, opt):
         try:

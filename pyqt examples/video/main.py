@@ -52,6 +52,8 @@ class VideoWindow(QMainWindow):
             if reply == QMessageBox.Yes:
                 webbrowser.open(
                     'http://www.codecguide.com/download_k-lite_codec_pack_standard.htm')
+            elif reply == QMessageBox.No:
+                self.close()
 
 if __name__ == '__main__':
      app = QApplication([])

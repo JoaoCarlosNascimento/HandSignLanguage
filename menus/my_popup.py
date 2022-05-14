@@ -19,10 +19,6 @@ class my_popup(QWidget):
         if not self.block_close:
             if event.type() == QEvent.WindowDeactivate:  
                 self.close()
-        # else:
-        #     print("blocked!")
-        # if event.type() == QEvent.MouseButtonPress:
-        #     print("asdas")
         return False
     
 
