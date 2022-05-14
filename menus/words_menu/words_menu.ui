@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
-    <height>486</height>
+    <width>733</width>
+    <height>591</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,36 +16,36 @@
   <widget class="QPushButton" name="bt_prev">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>450</y>
-     <width>75</width>
-     <height>23</height>
+     <x>20</x>
+     <y>460</y>
+     <width>101</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>prev</string>
+    <string>Back</string>
    </property>
   </widget>
   <widget class="QPushButton" name="bt_next">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>450</y>
-     <width>75</width>
-     <height>23</height>
+     <x>610</x>
+     <y>460</y>
+     <width>101</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>next</string>
+    <string>Next</string>
    </property>
   </widget>
   <widget class="QListWidget" name="listWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>40</x>
      <y>20</y>
      <width>650</width>
-     <height>401</height>
+     <height>341</height>
     </rect>
    </property>
    <property name="sizePolicy">
