@@ -65,7 +65,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../logo+title/imagem_junta_logo.png</pixmap>
+    <pixmap>../imagens_menus/imagem_junta_logo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -84,7 +84,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../logo+title/titulo_png.png</pixmap>
+    <pixmap>../imagens_menus/titulo_png.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
