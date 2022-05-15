@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="main_menu">
+    <file>imagens_menus/imagem_junta_logo.png</file>
+    <file>imagens_menus/titulo_png.png</file>
+  </qresource>
+</RCC>

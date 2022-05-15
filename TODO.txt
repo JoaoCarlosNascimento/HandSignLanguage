@@ -1,0 +1,7 @@
+Check do titulo do livro
+Check de palavras
+
+Contador de paginas
+Exit button
+
+Verificar o livro
