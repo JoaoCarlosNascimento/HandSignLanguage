@@ -50,6 +50,10 @@
      <height>100</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(148, 150, 255);
+font: 14pt &quot;Franklin Gothic Demi&quot;;</string>
+   </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
    </property>

@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="256cfbf7-f118-41c3-8ac1-786e56a88af5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base.ui" beforeDir="false" afterPath="$PROJECT_DIR$/base.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus/books_menu/books_menu.ui" beforeDir="false" afterPath="$PROJECT_DIR$/menus/books_menu/books_menu.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus/create_menu/create_menu.ui" beforeDir="false" afterPath="$PROJECT_DIR$/menus/create_menu/create_menu.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus/main_menu/main_menu.ui" beforeDir="false" afterPath="$PROJECT_DIR$/menus/main_menu/main_menu.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus/read_menu/read_menu.ui" beforeDir="false" afterPath="$PROJECT_DIR$/menus/read_menu/read_menu.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus/read_menu/read_menu_contents.ui" beforeDir="false" afterPath="$PROJECT_DIR$/menus/read_menu/read_menu_contents.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

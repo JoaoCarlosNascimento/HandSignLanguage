@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>581</width>
+    <width>700</width>
     <height>411</height>
    </rect>
   </property>
@@ -18,7 +18,7 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>581</width>
+    <width>700</width>
     <height>411</height>
    </size>
   </property>
@@ -28,9 +28,9 @@
   <widget class="QWidget" name="horizontalLayoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>80</y>
-     <width>561</width>
+     <x>40</x>
+     <y>130</y>
+     <width>621</width>
      <height>71</height>
     </rect>
    </property>
@@ -39,9 +39,13 @@
      <widget class="QLineEdit" name="book_title">
       <property name="maximumSize">
        <size>
-        <width>350</width>
+        <width>500</width>
         <height>50</height>
        </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="placeholderText">
        <string>Book Title</string>
@@ -56,8 +60,12 @@
         <height>50</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(148, 150, 255);</string>
+      </property>
       <property name="text">
-       <string>Upload cover image</string>
+       <string>Upload Cover Image</string>
       </property>
      </widget>
     </item>
@@ -66,11 +74,15 @@
   <widget class="QPushButton" name="pb_np">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>260</y>
+     <x>530</x>
+     <y>310</y>
      <width>141</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(148, 150, 255);</string>
    </property>
    <property name="text">
     <string>Next</string>
@@ -79,11 +91,15 @@
   <widget class="QPushButton" name="pb_back">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>262</y>
+     <x>30</x>
+     <y>310</y>
      <width>141</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(148, 150, 255);</string>
    </property>
    <property name="text">
     <string>Cancel</string>

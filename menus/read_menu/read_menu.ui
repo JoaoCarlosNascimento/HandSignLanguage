@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>20</y>
+     <y>80</y>
      <width>641</width>
      <height>391</height>
     </rect>
@@ -39,10 +39,20 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>473</y>
-     <width>731</width>
-     <height>31</height>
+     <y>0</y>
+     <width>100</width>
+     <height>38</height>
     </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(148, 150, 255);</string>
    </property>
    <property name="text">
     <string>Back</string>
