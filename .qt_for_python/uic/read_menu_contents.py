@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'd:\SRI\HandSignLanguage\menus\read_menu\read_menu_contents.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(684, 420)
+        self.image = QtWidgets.QLabel(Form)
+        self.image.setGeometry(QtCore.QRect(50, 10, 581, 251))
+        self.image.setScaledContents(True)
+        self.image.setObjectName("image")
+        self.text = QtWidgets.QListWidget(Form)
+        self.text.setGeometry(QtCore.QRect(40, 290, 601, 100))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.text.sizePolicy().hasHeightForWidth())
+        self.text.setSizePolicy(sizePolicy)
+        self.text.setMinimumSize(QtCore.QSize(100, 100))
+        self.text.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.text.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.text.setProperty("showDropIndicator", False)
+        self.text.setDefaultDropAction(QtCore.Qt.IgnoreAction)
+        self.text.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
+        self.text.setFlow(QtWidgets.QListView.LeftToRight)
+        self.text.setProperty("isWrapping", True)
+        self.text.setResizeMode(QtWidgets.QListView.Adjust)
+        self.text.setLayoutMode(QtWidgets.QListView.Batched)
+        self.text.setViewMode(QtWidgets.QListView.ListMode)
+        self.text.setWordWrap(True)
+        self.text.setSelectionRectVisible(False)
+        self.text.setObjectName("text")
+        item = QtWidgets.QListWidgetItem()
+        self.text.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.text.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.text.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.text.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.text.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.text.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.text.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.text.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.text.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.text.addItem(item)
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.image.setText(_translate("Form", "TextLabel"))
+        __sortingEnabled = self.text.isSortingEnabled()
+        self.text.setSortingEnabled(False)
+        item = self.text.item(0)
+        item.setText(_translate("Form", "aaa"))
+        item = self.text.item(1)
+        item.setText(_translate("Form", "sd"))
+        item = self.text.item(2)
+        item.setText(_translate("Form", "f"))
+        item = self.text.item(3)
+        item.setText(_translate("Form", "abababa"))
+        item = self.text.item(4)
+        item.setText(_translate("Form", "asdlkfjasdf"))
+        item = self.text.item(5)
+        item.setText(_translate("Form", "akjsdkahjfakjshdf"))
+        item = self.text.item(6)
+        item.setText(_translate("Form", "amnsdmasndfb"))
+        item = self.text.item(7)
+        item.setText(_translate("Form", "amnsdbasdf"))
+        item = self.text.item(8)
+        item.setText(_translate("Form", "aksdjfh"))
+        item = self.text.item(9)
+        item.setText(_translate("Form", "bbb"))
+        self.text.setSortingEnabled(__sortingEnabled)
+
