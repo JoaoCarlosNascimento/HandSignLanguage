@@ -65,7 +65,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>F:/Mestrado/1º ano/2º Semestre/SRI/SRI_MENUS/imagem_junta_logo.png</pixmap>
+    <pixmap>../logo+title/imagem_junta_logo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -84,7 +84,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>F:/Mestrado/1º ano/2º Semestre/SRI/SRI_MENUS/titulo_png.png</pixmap>
+    <pixmap>../logo+title/titulo_png.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

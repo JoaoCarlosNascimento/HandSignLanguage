@@ -65,19 +65,6 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="bt_next_2">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>460</y>
-     <width>101</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Back</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>
