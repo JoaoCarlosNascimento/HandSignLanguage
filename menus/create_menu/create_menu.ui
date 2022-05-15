@@ -29,66 +29,89 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>330</y>
+     <y>80</y>
      <width>561</width>
      <height>71</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_8">
     <item>
+     <widget class="QLineEdit" name="book_title">
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="placeholderText">
+       <string>Book Title</string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QPushButton" name="pb_upload">
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>50</height>
+       </size>
+      </property>
       <property name="text">
        <string>Upload cover image</string>
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QPushButton" name="pb_back">
-      <property name="text">
-       <string>Cancel</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="preview">
-      <property name="frameShadow">
-       <enum>QFrame::Plain</enum>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pb_np">
-      <property name="text">
-       <string>Next</string>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
-  <widget class="QLineEdit" name="book_title">
+  <widget class="QPushButton" name="pb_np">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>170</y>
-     <width>223</width>
-     <height>20</height>
+     <x>430</x>
+     <y>260</y>
+     <width>141</width>
+     <height>61</height>
     </rect>
    </property>
-   <property name="placeholderText">
-    <string>Book Title</string>
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_back">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>262</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="preview">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>47</width>
+     <height>69</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
