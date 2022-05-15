@@ -16,6 +16,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QPushButton" name="bt_sc">
    <property name="geometry">
     <rect>
@@ -55,7 +58,20 @@
     <string notr="true">background-color: rgb(255, 0, 0);</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Number of pages:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="number_of_pages">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>110</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
    </property>
   </widget>
  </widget>

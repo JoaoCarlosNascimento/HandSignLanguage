@@ -25,56 +25,6 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>561</width>
-     <height>321</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QLineEdit" name="book_title">
-      <property name="placeholderText">
-       <string>Book Title</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QLabel" name="preview">
-        <property name="frameShadow">
-         <enum>QFrame::Plain</enum>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_7">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_9"/>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pb_upload">
-          <property name="text">
-           <string>Upload cover image</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-   </layout>
-  </widget>
   <widget class="QWidget" name="horizontalLayoutWidget_3">
    <property name="geometry">
     <rect>
@@ -86,9 +36,29 @@
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_8">
     <item>
+     <widget class="QPushButton" name="pb_upload">
+      <property name="text">
+       <string>Upload cover image</string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QPushButton" name="pb_back">
       <property name="text">
        <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="preview">
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -107,6 +77,19 @@
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLineEdit" name="book_title">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>170</y>
+     <width>223</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Book Title</string>
+   </property>
   </widget>
  </widget>
  <resources/>

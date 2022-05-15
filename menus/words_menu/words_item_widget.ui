@@ -128,25 +128,6 @@
      <string>...</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pb_connect">
-    <property name="geometry">
-     <rect>
-      <x>425</x>
-      <y>30</y>
-      <width>75</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="text">
-     <string>Connect</string>
-    </property>
-   </widget>
    <widget class="QToolButton" name="bt_delete">
     <property name="geometry">
      <rect>
