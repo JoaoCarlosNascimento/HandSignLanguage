@@ -22,11 +22,15 @@
   <widget class="QPushButton" name="bt_sc">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>180</y>
-     <width>111</width>
-     <height>31</height>
+     <x>20</x>
+     <y>200</y>
+     <width>171</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(148, 150, 255);</string>
    </property>
    <property name="text">
     <string>Save and Close</string>
@@ -35,11 +39,15 @@
   <widget class="QPushButton" name="bt_np">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>190</y>
-     <width>75</width>
-     <height>23</height>
+     <x>260</x>
+     <y>200</y>
+     <width>121</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(148, 150, 255);</string>
    </property>
    <property name="text">
     <string>New Page</string>
@@ -48,27 +56,32 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>40</x>
      <y>100</y>
-     <width>221</width>
+     <width>321</width>
      <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 0, 0);</string>
+    <string notr="true">font: 24pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(148, 150, 255);</string>
    </property>
    <property name="text">
-    <string>Number of pages:</string>
+    <string>   Number of pages:</string>
    </property>
   </widget>
   <widget class="QLabel" name="number_of_pages">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>110</y>
-     <width>51</width>
+     <x>320</x>
+     <y>112</y>
+     <width>31</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(148, 150, 255);</string>
    </property>
    <property name="text">
     <string>0</string>
