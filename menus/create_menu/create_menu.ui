@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
-    <height>411</height>
+    <width>723</width>
+    <height>520</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,8 +18,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>700</width>
-    <height>411</height>
+    <width>800</width>
+    <height>800</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -28,8 +28,8 @@
   <widget class="QWidget" name="horizontalLayoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>60</y>
+     <x>40</x>
+     <y>80</y>
      <width>621</width>
      <height>71</height>
     </rect>
@@ -74,8 +74,8 @@ background-color: rgb(148, 150, 255);</string>
   <widget class="QPushButton" name="pb_np">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>280</y>
+     <x>560</x>
+     <y>440</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -92,7 +92,7 @@ background-color: rgb(148, 150, 255);</string>
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>280</y>
+     <y>440</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -108,8 +108,8 @@ background-color: rgb(148, 150, 255);</string>
   <widget class="QLabel" name="preview">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>340</y>
+     <x>30</x>
+     <y>180</y>
      <width>47</width>
      <height>69</height>
     </rect>

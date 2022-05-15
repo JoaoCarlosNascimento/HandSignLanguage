@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="bt_prev">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>10</y>
+     <x>30</x>
+     <y>440</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -33,8 +33,8 @@ background-color: rgb(148, 150, 255);</string>
   <widget class="QPushButton" name="bt_next">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>10</y>
+     <x>560</x>
+     <y>440</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -51,7 +51,7 @@ background-color: rgb(148, 150, 255);</string>
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>130</y>
+     <y>20</y>
      <width>650</width>
      <height>341</height>
     </rect>
