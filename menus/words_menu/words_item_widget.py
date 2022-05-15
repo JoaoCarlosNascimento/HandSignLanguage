@@ -3,7 +3,7 @@ from PyQt5 import uic
 
 from menus.words_menu.word_popup import word_popup
 
-#tmp6
+from PyQt5.QtWidgets import QFileDialog
 
 class words_item_widget(QWidget):
     def __init__(self, text, parent=None, func=None):
@@ -16,11 +16,17 @@ class words_item_widget(QWidget):
         self.word_file_name = None
 
     def press_word_popup(self, e):
-        self.popup = word_popup(self)
-        self.popup.show()
+        self.block_close = True
+        self.fname = QFileDialog.getOpenFileName(
+            self, 'Open file', 'c:\\', "Video files (*.avi *.mp4)")
 
+        self.word_file_name = self.fname[0]
 
     def auto_delete(self):
         if self.func != None:
             self.func(self,self.le_word.text())
+
+
+
+
 

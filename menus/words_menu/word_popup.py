@@ -47,6 +47,7 @@ class word_popup(my_popup):
     def send_data(self):
         self.parent.word_file_name = self.fname[0]
         print(self.parent.word_file_name)
+        
     def eventFilter(self, object, event):
         if not self.block_close:
             if event.type() == QEvent.WindowDeactivate:

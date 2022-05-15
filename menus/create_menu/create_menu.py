@@ -1,10 +1,11 @@
-from PyQt5.QtWidgets import QWidget, QListWidgetItem
+from PyQt5.QtWidgets import QWidget, QListWidgetItem, QMessageBox
 from PyQt5 import uic
 from PyQt5.QtGui import QPixmap
 
 # from menus.create_menu.create_item_widget import books_item_widget
 from menus.my_menus import my_menus
 from PyQt5.QtWidgets import QFileDialog
+
 
 class create_menu(my_menus):
     def __init__(self, parent=None, func = None):
@@ -25,10 +26,27 @@ class create_menu(my_menus):
         print("Submit Title")
         db = self.parent().parent().parent().db
         # if self.image_path 
-        db.new_book(name = self.book_title.text(), img_path= self.image_path)
-        
-        if func != None:
-            func()
+        name = self.book_title.text()
+        if name == '' or name == ' ':
+            msgBox = QMessageBox(self) 
+            msgBox.setWindowTitle('Unvalid title')
+            msgBox.setText("You have to add a title to continue.")
+            msgBox.exec()
+            msgBox.setModal(True)
+            # reply = QMessageBox.question(self, 'Unvalid title', "You have to add a title to continue.")
+            # # reply
+            # href = "<a href = 'http://www.codecguide.com/download_k-lite_codec_pack_standard.htm' > Codec < /a >"
+
+            # if reply == QMessageBox.Yes:
+            #     webbrowser.open(
+            #         'http://www.codecguide.com/download_k-lite_codec_pack_standard.htm')
+            # elif reply == QMessageBox.No:
+            #     self.close()
+        else:
+            db.new_book(name, img_path= self.image_path)
+            
+            if func != None:
+                func("menu_text")
         
     def select_file_diag(self):
         self.block_close = True

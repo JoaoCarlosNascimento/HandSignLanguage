@@ -18,7 +18,6 @@ menus = []
 from lib.database import database
 def add_menu(stck,name,ptr):
     menus.append({"name": name, "idx": stck.indexOf(ptr), "ptr": ptr})
-    # print(name+" idx "+str(stck.indexOf(ptr)))
 
 def find_menu(name):
     return [item for item in menus if item['name'] == name][0]
@@ -91,7 +90,7 @@ class Ui(QtWidgets.QMainWindow):
         widget.pb_back.clicked.connect(lambda: self.change_page("menu_main"))
 
     def main_page_config(self):
-        widget = main_menu(self.stackedWidget)
+        widget = main_menu(self.stackedWidget,close_handler=self.close)
         self.stackedWidget.addWidget(widget)
         add_menu(self.stackedWidget, "menu_main", widget)
 
@@ -106,7 +105,7 @@ class Ui(QtWidgets.QMainWindow):
         
         widget.pb_np.clicked.connect(lambda: 
             find_menu("menu_create")['ptr'].submit(
-                self.change_page("menu_text")
+                self.change_page
             )
         )
 

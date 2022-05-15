@@ -55,7 +55,7 @@ class database:
     def new_word(self, pt, en, vid_path):
         sql = 'INSERT INTO WORDS(WORD_EN, WORD_PT, FIG_PATH) VALUES (?, ?, ?);'
         
-        self.cursor.execute(sql, (upper(pt), upper(en), vid_path))
+        self.cursor.execute(sql, (pt.upper(), en.upper(), vid_path))
 
     def execute(self, sql, opt):
         try:
