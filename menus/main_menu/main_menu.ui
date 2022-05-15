@@ -60,7 +60,7 @@ background-color: rgb(148, 150, 255);</string>
     <string>Exit</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="pb_help">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -130,7 +130,7 @@ background-color: rgb(148, 150, 255);</string>
   <zorder>label_2</zorder>
   <zorder>pb_read</zorder>
   <zorder>pushButton_2</zorder>
-  <zorder>pushButton_3</zorder>
+  <zorder>pb_help</zorder>
   <zorder>label</zorder>
  </widget>
  <resources>

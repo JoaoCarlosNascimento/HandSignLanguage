@@ -30,11 +30,11 @@ class Ui_Form(object):
         self.pushButton_2.setStyleSheet("font: 24pt \"Franklin Gothic Demi\";\n"
 "background-color: rgb(148, 150, 255);")
         self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_3 = QtWidgets.QPushButton(Form)
-        self.pushButton_3.setGeometry(QtCore.QRect(180, 420, 161, 81))
-        self.pushButton_3.setStyleSheet("font: 24pt \"Franklin Gothic Demi\";\n"
+        self.pb_help = QtWidgets.QPushButton(Form)
+        self.pb_help.setGeometry(QtCore.QRect(180, 420, 161, 81))
+        self.pb_help.setStyleSheet("font: 24pt \"Franklin Gothic Demi\";\n"
 "background-color: rgb(148, 150, 255);")
-        self.pushButton_3.setObjectName("pushButton_3")
+        self.pb_help.setObjectName("pb_help")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(150, 110, 481, 221))
         self.label.setAutoFillBackground(False)
@@ -54,7 +54,7 @@ class Ui_Form(object):
         self.label_2.raise_()
         self.pb_read.raise_()
         self.pushButton_2.raise_()
-        self.pushButton_3.raise_()
+        self.pb_help.raise_()
         self.label.raise_()
 
         self.retranslateUi(Form)
@@ -65,5 +65,5 @@ class Ui_Form(object):
         Form.setWindowTitle(_translate("Form", "Form"))
         self.pb_read.setText(_translate("Form", "Read"))
         self.pushButton_2.setText(_translate("Form", "Exit"))
-        self.pushButton_3.setText(_translate("Form", "Help"))
+        self.pb_help.setText(_translate("Form", "Help"))
 import resource_file_rc
