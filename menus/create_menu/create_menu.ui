@@ -29,7 +29,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>130</y>
+     <y>210</y>
      <width>621</width>
      <height>71</height>
     </rect>
@@ -74,8 +74,8 @@ background-color: rgb(148, 150, 255);</string>
   <widget class="QPushButton" name="pb_np">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>310</y>
+     <x>520</x>
+     <y>20</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -91,8 +91,8 @@ background-color: rgb(148, 150, 255);</string>
   <widget class="QPushButton" name="pb_back">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>310</y>
+     <x>20</x>
+     <y>20</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -108,8 +108,8 @@ background-color: rgb(148, 150, 255);</string>
   <widget class="QLabel" name="preview">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
+     <x>20</x>
+     <y>340</y>
      <width>47</width>
      <height>69</height>
     </rect>

@@ -17,10 +17,14 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>460</y>
-     <width>101</width>
-     <height>41</height>
+     <y>10</y>
+     <width>141</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(148, 150, 255);</string>
    </property>
    <property name="text">
     <string>Back</string>
@@ -29,11 +33,15 @@
   <widget class="QPushButton" name="bt_next">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>460</y>
-     <width>101</width>
-     <height>41</height>
+     <x>570</x>
+     <y>10</y>
+     <width>141</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Franklin Gothic Demi&quot;;
+background-color: rgb(148, 150, 255);</string>
    </property>
    <property name="text">
     <string>Next</string>
@@ -43,7 +51,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>20</y>
+     <y>130</y>
      <width>650</width>
      <height>341</height>
     </rect>
@@ -65,6 +73,9 @@
      <width>650</width>
      <height>16777215</height>
     </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
    </property>
    <property name="selectionMode">
     <enum>QAbstractItemView::NoSelection</enum>
