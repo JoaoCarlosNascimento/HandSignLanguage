@@ -55,8 +55,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>60</y>
+     <x>150</x>
+     <y>70</y>
      <width>481</width>
      <height>261</height>
     </rect>
@@ -65,7 +65,7 @@
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/newPrefix/imagens_menus/imagem_junta_logo.png);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
@@ -80,14 +80,14 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>-20</y>
+     <x>140</x>
+     <y>0</y>
      <width>481</width>
      <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/newPrefix/imagens_menus/titulo_png.png);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
