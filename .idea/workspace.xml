@@ -22,7 +22,6 @@
     <list default="true" id="256cfbf7-f118-41c3-8ac1-786e56a88af5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/ReadDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReadDatabase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/1/a.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/4/and.mp4" beforeDir="false" />
@@ -45,11 +44,6 @@
       <change beforePath="$PROJECT_DIR$/WordsVids/Abe The Service Dog/4/am.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WordsVids/Doing my Chores/1/Doing.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/books.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/books.db" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/db/books.db-journal" beforeDir="false" afterPath="$PROJECT_DIR$/db/books.db-journal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menus/main_menu/main_menu.ui" beforeDir="false" afterPath="$PROJECT_DIR$/menus/main_menu/main_menu.ui" afterDir="false" />
->>>>>>> cb6cd4b09f7d69b4578f1d23e3b717fe60edc890
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +68,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -82,17 +75,6 @@
   </component>
   <component name="RunManager" selected="Python.ReadDatabase">
     <configuration name="ReadDatabase" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-=======
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
-  }
-}</component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="help_menu_popup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
->>>>>>> cb6cd4b09f7d69b4578f1d23e3b717fe60edc890
       <module name="HandSignLanguage" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -100,20 +82,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ReadDatabase.py" />
-=======
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/menus/help_menu" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/menus/help_menu/help_menu_popup.py" />
->>>>>>> cb6cd4b09f7d69b4578f1d23e3b717fe60edc890
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,7 +126,6 @@
       <list>
         <item itemvalue="Python.ReadDatabase" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.help_menu_popup" />
       </list>
     </recent_temporary>
   </component>
