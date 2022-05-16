@@ -54,7 +54,6 @@ class database:
     
     def new_word(self, pt, en, vid_path):
         sql = 'INSERT INTO WORDS(WORD_EN, WORD_PT, FIG_PATH) VALUES (?, ?, ?);'
-        
         self.cursor.execute(sql, (pt.upper(), en.upper(), vid_path))
 
     def execute(self, sql, opt):
@@ -88,13 +87,12 @@ class database:
         books = self.cursor.execute(sql).fetchall()
         return books
     def get_word(self, word):
-        sql = 'SELECT * FROM WORDS WHERE WORD_EN = "' + word +'";'
+        sql = 'SELECT * FROM WORDS WHERE WORD_EN = "' + word.upper() +'";'
         ans = self.cursor.execute(sql).fetchall()
         if len(ans) > 0: return ans[0]
         else: return ans
     def disconnect(self):
         self.connection.close()
-
     
 def read_img(img_path):
     with open(img_path, 'rb') as file:

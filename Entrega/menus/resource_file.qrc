@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>imagens_menus/background.png</file>
+    <file>imagens_menus/titulo_png.png</file>
+    <file>imagens_menus/imagem_junta_logo.png</file>
+  </qresource>
+</RCC>

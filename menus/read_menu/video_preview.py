@@ -33,8 +33,6 @@ class dummy(QWidget):
 class VideoPlayer(QWidget):
     def __init__(self, video_path="Dog.mp4", parent=None):
         super(VideoPlayer, self).__init__(parent=parent)
-    #  self.setWindowTitle('QMediaPlayer TEST')
-    #  self.resize(640, 480)
 
         # QMediaPlayer
         self.mediaPlayer = QMediaPlayer(parent, QMediaPlayer.VideoSurface)
@@ -49,10 +47,8 @@ class VideoPlayer(QWidget):
 
         layout = QHBoxLayout()
         layout.addWidget(self.videoWidget)
-    #  self.setCentralWidget(self.videoWidget)
         self.mediaPlayer.setVideoOutput(self.videoWidget)
         self.setLayout(layout)
-    #  self.videoWidget.setVisible(True)
         # Play
         self.mediaPlayer.play()
         print(self.videoWidget.isVisible())
@@ -60,8 +56,6 @@ class VideoPlayer(QWidget):
 
     def status_changed(self,st):
         if st == self.mediaPlayer.EndOfMedia: # Loop video
-            
-            print("END")
             self.mediaPlayer.play()
 
     def er(self,error):
@@ -76,8 +70,3 @@ class VideoPlayer(QWidget):
             elif reply == QMessageBox.No:
                 self.close()
 
-if __name__ == '__main__':
-     app = QApplication([])
-     window = VideoPlayer()
-     window.show()
-     sys.exit(app.exec_())

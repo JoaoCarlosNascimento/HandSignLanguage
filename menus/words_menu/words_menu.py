@@ -30,12 +30,13 @@ class words_menu(my_menus):
         words_list = clean_text.split(' ')
         self.words_list = words_menu.remove_duplicates(words_list)
         self.words_list_nospaces = []
+        db = self.parent().parent().parent().db
         for item in self.words_list:
             if item != ' ' and item != '':
+                aux = db.get_word(item.upper())
+                if len(aux) > 0:
+                    continue
                 self.words_list_nospaces.append(item)
-        # print(self.words_list)
-        # if len(self.words_list_nospaces) == 0:
-        #     self.submit_page()
         for i in range(len(self.words_list_nospaces)):
             item = QListWidgetItem(self.listWidget)
             item_widget = words_item_widget(
