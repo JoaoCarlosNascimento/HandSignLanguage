@@ -88,7 +88,7 @@ class database:
         books = self.cursor.execute(sql).fetchall()
         return books
     def get_word(self, word):
-        sql = 'SELECT * FROM WORDS WHERE WORD_EN = "' + word +'";'
+        sql = 'SELECT * FROM WORDS WHERE WORD_EN = "' + word.upper() +'";'
         ans = self.cursor.execute(sql).fetchall()
         if len(ans) > 0: return ans[0]
         else: return ans
