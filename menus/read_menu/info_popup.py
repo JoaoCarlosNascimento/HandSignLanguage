@@ -19,9 +19,9 @@ class info_popup(my_popup):
 
         db = self.parent.parent().parent().parent().parent().parent().parent().db
         info = db.get_word(self.word.text().upper())
-        print(self.word.text())
-        print("Video: ")
-        print(info)
+        # print(self.word.text())
+        # print("Video: ")
+        # print(info)
         if info != []:
             self.setMinimumSize(680, 420)
             if len(info) > 0:
