@@ -14,7 +14,7 @@ vids_path = 'WordsVids/Vids/'
 # Folha1/Folha2: Excel em Português / Sheet1/Sheet2: Excel em Inglês
 Dataframe1 = pd.read_excel(excel_path, 'Folha1')
 Dataframe2 = pd.read_excel(excel_path, 'Folha2')
-
+'''
 # Database Para Livros
 Titulo_Livro = pd.DataFrame(Dataframe1, columns=['Livro'])
 Página = pd.DataFrame(Dataframe1, columns=['Página'])
@@ -25,7 +25,7 @@ Imagem = pd.DataFrame(Dataframe1, columns=['Imagem'])
 # Database Para Tradução de EN para PT
 Palavras_EN = pd.DataFrame(Dataframe2, columns=['Palavras_EN'])
 Palavras_PT = pd.DataFrame(Dataframe2, columns=['Palavras_PT'])
-
+'''
 # https://stackoverflow.com/questions/19472922/reading-external-sql-script-in-python
 
 with open('db/createdb.sql', 'r') as sql_file:
