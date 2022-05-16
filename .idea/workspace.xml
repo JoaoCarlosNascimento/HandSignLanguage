@@ -20,30 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="256cfbf7-f118-41c3-8ac1-786e56a88af5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/HandSignLanguage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HandSignLanguage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReadDatabase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/1/a.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/4/and.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/4/beach.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/4/by.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/4/family.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/4/me.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/4/my.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/4/sat.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/4/tree.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/5/There's.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/5/hog.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/5/shouted.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/A Dog on a Log/5/then.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/Abe The Service Dog/1/Abe.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/Abe The Service Dog/1/Service.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/Abe The Service Dog/1/The.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/Abe The Service Dog/4/Hi.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/Abe The Service Dog/4/am.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/Abe The Service Dog/4/am.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsVids/Doing my Chores/1/Doing.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/books.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/books.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,12 +47,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
-  </component>
-  <component name="RunManager" selected="Python.ReadDatabase">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.main">
     <configuration name="ReadDatabase" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="HandSignLanguage" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,12 +103,12 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ReadDatabase" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.ReadDatabase" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -159,44 +138,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="197" y="271" key="#SQL_Dialects" timestamp="1652696372521">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="197" y="271" key="#SQL_Dialects/0.0.1536.864@0.0.1536.864" timestamp="1652696372521" />
-    <state x="447" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1652705266566">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="447" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1652705266566" />
-    <state x="813" y="256" key="FileChooserDialogImpl" timestamp="1652698407451">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="813" y="256" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1652698407451" />
-    <state width="1537" height="228" key="GridCell.Tab.0.bottom" timestamp="1652707500433">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1537" height="228" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1652707500433" />
-    <state width="1537" height="228" key="GridCell.Tab.0.center" timestamp="1652707500433">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1537" height="228" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1652707500433" />
-    <state width="1537" height="228" key="GridCell.Tab.0.left" timestamp="1652707500433">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1537" height="228" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1652707500433" />
-    <state width="1537" height="228" key="GridCell.Tab.0.right" timestamp="1652707500433">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1537" height="228" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1652707500433" />
-    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1652705280497">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1652705280497" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/main_py$ReadDatabase.coverage" NAME="ReadDatabase Coverage Results" MODIFIED="1652707454250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1652705522572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
