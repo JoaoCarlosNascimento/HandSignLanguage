@@ -13,6 +13,7 @@ from menus.main_menu.main_menu import main_menu
 
 from menus.create_menu.create_menu import create_menu
 from menus.read_menu.read_menu import read_menu
+
 menus = []
 
 from lib.database import database
