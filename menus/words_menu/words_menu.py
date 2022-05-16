@@ -91,7 +91,7 @@ class words_menu(my_menus):
             txt = aux.le_word.text()
             img_path = aux.word_file_name
             
-            if img_path is not None:
+            if img_path is not None and img_path != '':
                 fname = img_path.split('/')
                 fname = fname[-1]
                 fname = os.path.join('resources', fname)

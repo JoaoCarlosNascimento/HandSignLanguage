@@ -40,6 +40,8 @@ class read_menu_contents(my_menus):
         
     def item_clicked(self):
         sel = self.text.itemWidget(self.text.currentItem()).text()
-
-        self.pp = info_popup(sel, self)
-        self.pp.show()
+        db = self.parent().parent().parent().parent().parent().parent().db
+        info = db.get_word(sel.upper())
+        if info != []:
+            self.pp = info_popup(sel, self)
+            self.pp.show()

@@ -14,13 +14,25 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(740, 500)
+        Form.resize(740, 474)
         Form.setStyleSheet("")
         self.gridLayout = QtWidgets.QGridLayout(Form)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.gridLayout.setSpacing(0)
         self.gridLayout.setObjectName("gridLayout")
+        self.pb_back = QtWidgets.QPushButton(Form)
+        self.pb_back.setMaximumSize(QtCore.QSize(100, 50))
+        self.pb_back.setStyleSheet("font: 18pt \"Franklin Gothic Demi\";\n"
+"background-color: rgb(148, 150, 255);")
+        self.pb_back.setObjectName("pb_back")
+        self.gridLayout.addWidget(self.pb_back, 0, 0, 1, 1)
         self.listWidget = QtWidgets.QListWidget(Form)
+        self.listWidget.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.listWidget.setStyleSheet("border-top-color: rgb(0, 0, 0);\n"
+"background-color: rgb(148, 150, 255);")
+        self.listWidget.setFrameShape(QtWidgets.QFrame.Box)
+        self.listWidget.setLineWidth(3)
+        self.listWidget.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.listWidget.setProperty("showDropIndicator", False)
         self.listWidget.setDragDropMode(QtWidgets.QAbstractItemView.NoDragDrop)
         self.listWidget.setMovement(QtWidgets.QListView.Static)
@@ -28,10 +40,7 @@ class Ui_Form(object):
         self.listWidget.setResizeMode(QtWidgets.QListView.Fixed)
         self.listWidget.setViewMode(QtWidgets.QListView.IconMode)
         self.listWidget.setObjectName("listWidget")
-        self.gridLayout.addWidget(self.listWidget, 0, 0, 1, 1)
-        self.pb_back = QtWidgets.QPushButton(Form)
-        self.pb_back.setObjectName("pb_back")
-        self.gridLayout.addWidget(self.pb_back, 1, 0, 1, 1)
+        self.gridLayout.addWidget(self.listWidget, 1, 0, 1, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)

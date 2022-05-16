@@ -14,15 +14,19 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(700, 486)
+        Form.resize(733, 591)
         self.bt_prev = QtWidgets.QPushButton(Form)
-        self.bt_prev.setGeometry(QtCore.QRect(30, 450, 75, 23))
+        self.bt_prev.setGeometry(QtCore.QRect(30, 440, 141, 61))
+        self.bt_prev.setStyleSheet("font: 18pt \"Franklin Gothic Demi\";\n"
+"background-color: rgb(148, 150, 255);")
         self.bt_prev.setObjectName("bt_prev")
         self.bt_next = QtWidgets.QPushButton(Form)
-        self.bt_next.setGeometry(QtCore.QRect(570, 450, 75, 23))
+        self.bt_next.setGeometry(QtCore.QRect(560, 440, 141, 61))
+        self.bt_next.setStyleSheet("font: 18pt \"Franklin Gothic Demi\";\n"
+"background-color: rgb(148, 150, 255);")
         self.bt_next.setObjectName("bt_next")
         self.listWidget = QtWidgets.QListWidget(Form)
-        self.listWidget.setGeometry(QtCore.QRect(10, 20, 650, 401))
+        self.listWidget.setGeometry(QtCore.QRect(40, 20, 650, 341))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -30,6 +34,7 @@ class Ui_Form(object):
         self.listWidget.setSizePolicy(sizePolicy)
         self.listWidget.setMinimumSize(QtCore.QSize(650, 0))
         self.listWidget.setMaximumSize(QtCore.QSize(650, 16777215))
+        self.listWidget.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.listWidget.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
         self.listWidget.setResizeMode(QtWidgets.QListView.Fixed)
         self.listWidget.setSelectionRectVisible(False)
@@ -41,6 +46,6 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.bt_prev.setText(_translate("Form", "prev"))
-        self.bt_next.setText(_translate("Form", "next"))
+        self.bt_prev.setText(_translate("Form", "Back"))
+        self.bt_next.setText(_translate("Form", "Next"))
         self.listWidget.setSortingEnabled(False)

@@ -60,6 +60,8 @@ class VideoPlayer(QWidget):
 
     def status_changed(self,st):
         if st == self.mediaPlayer.EndOfMedia: # Loop video
+            
+            print("END")
             self.mediaPlayer.play()
 
     def er(self,error):
